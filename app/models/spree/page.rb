@@ -1,5 +1,4 @@
 class Spree::Page < ActiveRecord::Base
-  default_scope -> { order("position ASC") }
 
   has_and_belongs_to_many :stores, :join_table => 'spree_pages_stores'
 
